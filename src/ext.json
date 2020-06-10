@@ -1,0 +1,35 @@
+{
+    "extensions": [
+        {
+            "name": "Hola VPN",
+            "url": "https://chrome.google.com/webstore/detail/hola-free-vpn-proxy-1-vpn/gkojfkhlekighikafcpjkiklfbnlmeio",
+            "icon": "https://lh3.googleusercontent.com/OZPbMr5Z3gqBWMLfQCUk9HeQFFIpQ7tGHc-64i1Eb61SWsW1Nshr9TkLfq9IdmEdAanVnRDwJpg=w128-h128-e365"
+        },
+        {
+            "name": "DotVPN",
+            "url": "https://chrome.google.com/webstore/detail/dotvpn-%E2%80%94-a-better-way-to/kpiecbcckbofpmkkkdibbllpinceiihk?hl=en",
+            "icon": "https://lh3.googleusercontent.com/vmquonnlaYFAuyFyuPwfiHpwlRhANllkA1s7ow-UivOk9heBRpEQjLDpzeSESugCUHKc7KGV=w128-h128-e365"
+        },
+        {
+            "name": "Wachee VPN",
+            "url": "https://chrome.google.com/webstore/detail/wachee-vpn-unblocker-for/bhnhkdgoefpmekcgnccpnhjfdgicfebm?hl=en",
+            "icon": "https://lh3.googleusercontent.com/5lEugo1vVoh01gzCZ4DMgGn5RSU0LFx2g3WSQ7Lzm-wJBhxI2LcFbGPZ1PyVYsTqqTpFJ3rSRpk=w128-h128-e365"
+        },
+        {
+            "name": "Dark Reader",
+            "url": "https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=en",
+            "icon": "https://lh3.googleusercontent.com/iHIxZUDpLDF5i4Rp1xiU1XViJY4uw5T_VUNdHo92TwfyQe0uKwrCONP_Qemxoyv3xe6R4XMpkQ=w128-h128-e365"
+        },
+        {
+            "name": "Subtital",
+            "url": "https://chrome.google.com/webstore/detail/substital-add-subtitles-t/kkkbiiikppgjdiebcabomlbidfodipjg?hl=en",
+            "icon": "https://lh3.googleusercontent.com/dED2QxqHKY3bJ35UCu_E0DEZKb39TgfzOAdSadsaXYQUJiy2nC3272vY3Q8hKTpJXJLj-PfOQw=w128-h128-e365"
+        },
+        {
+            "name": "Surfshark VPN",
+            "url": "https://chrome.google.com/webstore/detail/surfshark-vpn-extension-f/ailoabdmgclmfmhdagmlohpjlbpffblp",
+            "icon": "https://lh3.googleusercontent.com/mGJFlPaVGGbVuw09JttFB2z6VZi9T4yEo-LeXQ00fZCpN2_OzpFEjtuHjAbEjt0wbLrQ688aw5I=w128-h128-e365"
+        }
+    ]
+}
+
