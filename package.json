@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build",
-    "export": "sapper export",
+    "export": "sapper export && scripts/postexport",
     "start": "node __sapper__/build",
     "deploy": "npm run export && cd __sapper__/export && vercel --prod"
   },

@@ -1,0 +1,4 @@
+#!/bin/sh
+cd __sapper__/export
+rm -rf service-worker-index.html client/*.js
+sed 's/ \?<noscript.*\?>.*\?<\/noscript> \?//g' index.html
