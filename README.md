@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Your browser should open at https://localhost:5000
+Your browser should open at https://localhost:3000
 
 ### Deploying
 

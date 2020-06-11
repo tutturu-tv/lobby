@@ -1,3 +1,4 @@
-/node_modules/
-/public/build/
-/public/.now/
+.DS_Store
+node_modules
+__sapper__
+.now

@@ -1,6 +1,4 @@
-<main>
-    <h1>tutturu</h1>
-</main>
+<h1>tutturu</h1>
 
 <style>
     h1 {
