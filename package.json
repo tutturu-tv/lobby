@@ -7,7 +7,7 @@
     "build": "sapper build",
     "export": "sapper export",
     "start": "node __sapper__/build",
-    "deploy": "npm run export && cd __sapper__/export && now --prod"
+    "deploy": "npm run export && cd __sapper__/export && vercel --prod"
   },
   "dependencies": {
     "compression": "^1.7.1",

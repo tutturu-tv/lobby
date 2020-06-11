@@ -16,6 +16,7 @@ Your browser should open at https://localhost:3000
 **Make sure you're not running rollup (development mode).**
 
 ```
+npm i -g vercel # if you haven't already
 npm run deploy
 ```
 
