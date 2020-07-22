@@ -6,6 +6,7 @@ import pkg from './package.json'
 import replace from '@rollup/plugin-replace'
 import resolve from '@rollup/plugin-node-resolve'
 import svelte from 'rollup-plugin-svelte'
+import svelteSVG from "rollup-plugin-svelte-svg"
 import { terser } from 'rollup-plugin-terser'
 
 const mode = process.env.NODE_ENV
@@ -19,6 +20,7 @@ export default {
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
+			svelteSVG({ dev }),
 			json(),
 			replace({
 				'process.browser': true,
@@ -65,6 +67,7 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
+			svelteSVG({ generate: "ssr", dev }),
 			json(),
 			replace({
 				'process.browser': false,

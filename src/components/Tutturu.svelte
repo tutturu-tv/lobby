@@ -1,15 +1,5 @@
-<h1>tutturu</h1>
+<Logo style="fill: #7a92f3;margin-bottom: 0.625rem;" width="300"/>
 
-<style>
-    h1 {
-        margin-bottom: 20px;
-        letter-spacing: 4px;
-        font-kerning: none;
-        font-family: 'PT Sans', sans-serif;
-        text-align: center;
-        color: #403B5C;
-        -webkit-text-stroke: 4px #403B5C;
-        font-size: 6em;
-        user-select: none;
-    }
-</style>
+<script>
+import Logo from "../assets/logo.svg";
+</script>
