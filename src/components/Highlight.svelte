@@ -22,8 +22,17 @@
 </div>
 
 <style>
+  @keyframes slidebg {
+    0%,
+    100% {
+      background-position: -450px;
+    }
+    50% {
+      background-position: -0px;
+    }
+  }
+
   .comfy {
-    background-color: #627ff1;
     text-shadow: 0 0 1px #eee;
     width: fit-content;
     border-radius: 7.5rem;
@@ -34,6 +43,10 @@
     color: white;
     border: 0;
     position: relative;
+    background-image: linear-gradient(45deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    background-position: -250px;
+    background-size: 800px 56px;
+    animation: slidebg 4s ease-in-out infinite;
   }
 
   @keyframes gg {
