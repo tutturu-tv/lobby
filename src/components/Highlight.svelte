@@ -47,6 +47,7 @@
     background-position: -250px;
     background-size: 800px 56px;
     animation: slidebg 4s ease-in-out infinite;
+    cursor: pointer;
   }
 
   @keyframes gg {
