@@ -1,4 +1,5 @@
 <script>
+  import PlayButton from "../assets/play-default.svg";
   export let sub
   export let a
   let experiment = a ? 'a' : 'b'
@@ -6,10 +7,18 @@
 </script>
 
 <div>
-  <h2>New Premium Feature!</h2>
-  <h2>Save your favorite websites and extensions for next time!</h2>
+  <div class="highlight-header-container">
+    <h2 class="highlight-header">New Premium Feature!</h2>
+    <h3 class="highlight-subheader">Save your favorite websites and extensions for next time!</h3>
+  </div>
   {#if a}
-    <video id="{usertype}-ad" class="vid" src="/ad.mp4" controls />
+  <div class="videoContainer">
+    <div id="playBtn" class="play-btn">
+      <PlayButton />
+    </div>
+    <div id="videoOverlay" />
+    <video id="saveStateVid" class="vid" src="/ad.mp4" poster="tu-lobby-thumbnail.png" controls />
+  </div>
   {:else}
     <video preload="auto" class="vid" src="/demo.webm" autoplay muted loop title="Demo" />
   {/if}
@@ -33,6 +42,7 @@
   }
 
   .comfy {
+    margin-top: 2px;
     text-shadow: 0 0 1px #eee;
     width: fit-content;
     border-radius: 7.5rem;
@@ -83,15 +93,73 @@
     opacity: 0;
   }
 
+  .videoContainer {
+    position: relative;
+  }
+
+  #videoOverlay {
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 12px;
+  }
+
   .vid {
     width: 45rem;
+    margin-bottom: 8px;
+  }
+
+  .vid:focus {
+    outline: none !important;
+  }
+
+  .vid:hover {
+    cursor: pointer;
+  }
+
+  .highlight-header-container {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .highlight-header {
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .highlight-subheader {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 4px auto;
   }
 
   .dim {
     color: #a1a7aa;
+    font-size: 16px;
+    line-height: 136%;
+    margin-bottom: 10px;
   }
 
   .comfy:hover {
     background-color: #7a92f3;
   }
+
+  .play-btn {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 60px); 
+    height: 100px;
+    width: 100px;
+    fill: white;
+    opacity: 60%;
+  }
+
+  .play-btn:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+
 </style>
