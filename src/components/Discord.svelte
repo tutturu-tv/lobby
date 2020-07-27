@@ -1,5 +1,5 @@
 <div class="container">
-  <img alt="Join our Discord server!" src="discord.png" width="150" />
+  <img class="discord-icon" alt="Join our Discord server!" src="discord.png" width="150" />
   <p class="name">Tutturu!</p>
   <div class="line"></div>
   <p class="members">??? members</p><button id="join-discord" class="join">Join server</button>
@@ -8,33 +8,42 @@
 <style>
   .container {
     background-color: #2e2e2e;
-    width: 20rem;
+    width: 220px;
     position: absolute;
     right: 0;
-    top: 3.125rem;
+    top: 58px;
     text-align: left;
     color: #a1a7aa;
     font-weight: 600;
-    padding: 0.625rem 0.625rem 1.00rem;
+    padding: 8px 16px 12px 16px;
+  }
+  .discord-icon {
+    margin-left: -8px;
   }
   .name {
-    margin-top: 0.1875rem;
-    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-top: 0;
   }
   .line {
     background-color: #a1a7aa;
     height: 1px;
-    width: 16.875rem;
-    margin-bottom: 1.25rem;
+    width: 96%;
+    margin-bottom: 8px;
   }
   .members {
+    margin-right: 12px;
+    font-weight: normal;
     display: inline;
     text-transform: uppercase;
   }
   .join {
     display: inline;
     text-transform: uppercase;
-
+    margin-bottom: 0;
+    margin-left: 0.625rem;
+    margin-top: 2px;
     background-color: #627ff1;
     text-shadow: 0 0 1px #eee;
     width: fit-content;
@@ -43,10 +52,10 @@
     padding: 0.9375rem 1.25rem;
     display: inline-block;
     color: white;
-    margin-left: 0.625rem;
     border: 0;
   }
   .join:hover {
     background-color: #7a92f3;
+    cursor: pointer;
   }
 </style>

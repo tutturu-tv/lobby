@@ -4,25 +4,25 @@
 </script>
 
 <div class="container">
-  <h3>Popular Chrome extensions</h3>
+  <h3 class="extensions-container-title">Popular Chrome extensions</h3>
   <div class="list">
     {#each extensions as ex}
       <a href={ex.url} target="_blank" rel="noopener noreferrer">
         <div class="item">
           <img alt={ex.name} class="ext-img" src={ex.icon} width="32" height="32">
-          <span>{ex.name}</span>
+          <span class="extension-name-text">{ex.name}</span>
           <i class="arrow"></i>
         </div>
       </a>
     {/each}
   </div>
-  <a href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener noreferrer">See more</a>
+  <a class="see-more-text" href="https://chrome.google.com/webstore/category/extensions" target="_blank" rel="noopener noreferrer">See more</a>
 </div>
 
 <style>
   .container {
     background-color: #2e2e2e;
-    width: 20.625rem;
+    width: 244px;
     position: absolute;
     right: 0;
     top: 18rem;
@@ -34,7 +34,8 @@
     margin-bottom: 1.25rem;
   }
   .item {
-    position: relative;
+    display: flex;
+    align-items: center;
     padding: 0.625rem;
     background-color: #212121;
     margin: 0.3125rem 0 0.3125rem 0.3125rem;
@@ -54,14 +55,25 @@
     text-decoration: none;
   }
   .arrow {
+    height: 8px;
+    width: 8px;
+    right: calc(0.3125rem + 0.625rem);
+    position: absolute;
     border: solid #6CB4D2;
     border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 0.3125rem;
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+  }
+  .extension-name-text {
+    margin-left: 6px;
+    font-size: 13px;
+  }
+  .see-more-text {
+    font-size: 14px;
+  }
+  .extensions-container-title {
+    text-align: left;
+    margin-left: 0.3125rem;
+    margin-top: 8px;
   }
 </style>

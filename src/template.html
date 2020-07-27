@@ -7,7 +7,7 @@
 
 	%sapper.base%
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:normal,bold&display=swap" rel="stylesheet">
 	<link rel='stylesheet' href='global.css'>
 	<link rel='icon' type='image/png' href='favicon.png'>
 
@@ -27,6 +27,23 @@
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
-	     initialise the router -->
+		 initialise the router -->
+	<script>
+		saveStateVid.onplaying = (e) => {
+			playBtn.style.display = "none"
+			videoOverlay.style.display="none"
+		}
+		saveStateVid.onpause = (e) => {
+			playBtn.style.display = "block"
+			videoOverlay.style.display="block"
+		}
+		saveStateVid.onmouseover = (e) => {
+			playBtn.style.opacity = "90%";
+		}
+		saveStateVid.onmouseleave = (e) => {
+			playBtn.style.opacity = "55%";
+		}
+	</script>
 </body>
+
 </html>
