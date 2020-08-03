@@ -22,7 +22,8 @@
 <style>
   .container {
     background-color: #2e2e2e;
-    width: 244px;
+    box-sizing: border-box;
+    width: 270px;
     position: absolute;
     right: 0;
     top: 18rem;

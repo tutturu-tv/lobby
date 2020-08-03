@@ -2,13 +2,14 @@
   <img class="discord-icon" alt="Join our Discord server!" src="discord.png" width="150" />
   <p class="name">Tutturu!</p>
   <div class="line"></div>
-  <p class="members">??? members</p><button id="join-discord" class="join">Join server</button>
+  <p class="members" id="members">??? members</p><button id="join-discord" class="join">Join server</button>
 </div>
 
 <style>
   .container {
     background-color: #2e2e2e;
-    width: 220px;
+    box-sizing: border-box;
+    width: 270px;
     position: absolute;
     right: 0;
     top: 58px;
