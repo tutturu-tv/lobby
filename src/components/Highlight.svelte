@@ -95,6 +95,7 @@
 
   .videoContainer {
     position: relative;
+    line-height: 0;
   }
 
   #videoOverlay {
@@ -150,7 +151,7 @@
   .play-btn {
     position: absolute;
     left: calc(50% - 50px);
-    top: calc(50% - 60px); 
+    top: calc(50% - 60px);
     height: 100px;
     width: 100px;
     fill: white;
