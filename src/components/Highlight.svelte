@@ -128,7 +128,6 @@
   .highlight-header {
     font-size: 24px;
     margin-bottom: 8px;
-    margin-top: 0;
   }
 
   .highlight-subheader {
